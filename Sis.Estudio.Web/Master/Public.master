@@ -1,0 +1,126 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Public.master.cs" Inherits="Master_Public" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ Register Src="../WebUserControl/WUCPie.ascx" TagName="UCPie" TagPrefix="uc2" %>
+<%@ Register Src="../WebUserControl/WUCCabeceraLogin.ascx" TagName="UCCabecera" TagPrefix="uc1" %>
+
+<!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"-->
+<!--html xmlns="http://www.w3.org/1999/xhtml"-->  
+
+<head id="Head1" runat="server">
+    <title>CR :: Web</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="Estilo/Reset.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .modalBackground 
+         {
+	        background-color:Gray; 
+            filter:alpha(opacity=70); 
+            opacity:0.7;             
+         }
+        
+    </style>
+    
+     
+</head>
+<!--  cuerpo -->
+<body>
+
+        <form id="mainForm" runat="server" style="padding-bottom:0; margin-bottom:0;">
+            <!-- Cabecera -->
+            <asp:ScriptManager  AsyncPostBackTimeout="360" ID="ScriptManager1" runat="server"   EnableScriptGlobalization="true" EnableScriptLocalization="true" ></asp:ScriptManager>        
+            
+
+
+<table  style="width: 100%; height:100%;  border:0; padding:0; margin:0;">
+  <tr>
+    <td height="100px">
+    <uc1:UCCabecera ID="UCCabecera1" runat="server" />
+    </td>
+  </tr>
+  <tr>
+    <td    style="height:100%;filter: progid:DXImageTransform.Microsoft.Gradient(endColorstr='#ffffff', startColorstr='#E0E0E0', gradientType='0');">
+    
+    
+            <!-- Contenido -->
+            <table cellspacing="0px" cellpadding="0px" style="width: 100%; height:100%"  border="0px">
+                <tr valign="top">
+                    <!-- izquierda -->
+                    <td style="width: 100%">
+                        <table id="content-table" cellspacing="0px" cellpadding="0px" style="width: 100%"
+                            border="0px">
+                            <tr valign="top">
+                                <td style="width: 100%">
+                                   
+                                    <table cellspacing="0px" cellpadding="0px" width="100%" border="0px">
+                                        <tr valign="top">
+                                            <td class="encebezadotabla-2" width="100%" align="center">
+                                                <b>
+                                                     <asp:Label ID="lblTituloModulo" runat="server"  
+                                                    Text="Bienvenidos al Sistema" ForeColor="White" />
+                                                </b>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <!-- mensajes y contenido -->
+                                    <table class="v14-gray-table-border" cellspacing="0px" cellpadding="0px" width="100%"
+                                        border="0">
+                                        <tr valign="top">
+                                            <td style="width: 100%" class="v14-gray-table-border">
+                                                <div>
+                                                    <asp:UpdatePanel ID="upMensaje" runat="server" UpdateMode="Always">
+                                                        <ContentTemplate>
+                                                            <asp:Panel ID="pMensaje" runat="server" Visible="false" BorderStyle="Solid" BorderWidth="1px"
+                                                                BorderColor="silver" BackColor="whitesmoke" Width="100%" 
+                                                                style="text-align: center">
+                                                                <asp:Image ID="imgMensaje" runat="server" />
+                                                                <asp:Label ID="lblMensaje" runat="server" ForeColor="red" />
+                                                            </asp:Panel>
+                                                            <asp:Panel ID="pMensakeList" runat="server" Visible="false" BorderStyle="Solid" BorderWidth="1px"
+                                                                BorderColor="silver" BackColor="whitesmoke" Width="100%">
+                                                            </asp:Panel>
+                                                        </ContentTemplate>
+                                                    </asp:UpdatePanel>
+                                                    <asp:ContentPlaceHolder ID="DefaultContent" runat="server">
+
+                                                    </asp:ContentPlaceHolder>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="width: 10px">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!-- derecha- menu lateral derecho -->
+                    <td style="width: 150px">
+                        
+
+                    </td>
+                </tr>
+            </table>
+
+
+    </td>
+  </tr>
+  <tr>
+    <td height="50px">
+    <uc2:UCPie ID="UCPie1" runat="server" />
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+            
+        </form>
+
+</body>
+</html>
+

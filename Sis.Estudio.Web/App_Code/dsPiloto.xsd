@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPiloto" targetNamespace="http://tempuri.org/dsPiloto.xsd" xmlns:mstns="http://tempuri.org/dsPiloto.xsd" xmlns="http://tempuri.org/dsPiloto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="MSSQL_ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MSSQL_ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.MSSQL_ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPiloto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsPiloto" msprop:Generator_UserDSName="dsPiloto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTPiloto" msprop:Generator_TableClassName="DTPilotoDataTable" msprop:Generator_TableVarName="tableDTPiloto" msprop:Generator_TablePropName="DTPiloto" msprop:Generator_RowDeletingName="DTPilotoRowDeleting" msprop:Generator_UserTableName="DTPiloto" msprop:Generator_RowChangingName="DTPilotoRowChanging" msprop:Generator_RowEvHandlerName="DTPilotoRowChangeEventHandler" msprop:Generator_RowDeletedName="DTPilotoRowDeleted" msprop:Generator_RowEvArgName="DTPilotoRowChangeEvent" msprop:Generator_RowChangedName="DTPilotoRowChanged" msprop:Generator_RowClassName="DTPilotoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NomUsuario" msprop:Generator_ColumnVarNameInTable="columnNomUsuario" msprop:Generator_ColumnPropNameInRow="NomUsuario" msprop:Generator_ColumnPropNameInTable="NomUsuarioColumn" msprop:Generator_UserColumnName="NomUsuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Agencia" msprop:Generator_ColumnVarNameInTable="columnAgencia" msprop:Generator_ColumnPropNameInRow="Agencia" msprop:Generator_ColumnPropNameInTable="AgenciaColumn" msprop:Generator_UserColumnName="Agencia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Zona" msprop:Generator_ColumnVarNameInTable="columnZona" msprop:Generator_ColumnPropNameInRow="Zona" msprop:Generator_ColumnPropNameInTable="ZonaColumn" msprop:Generator_UserColumnName="Zona">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeuInicio" msprop:Generator_ColumnVarNameInTable="columnDeuInicio" msprop:Generator_ColumnPropNameInRow="DeuInicio" msprop:Generator_ColumnPropNameInTable="DeuInicioColumn" msprop:Generator_UserColumnName="DeuInicio" type="xs:decimal" />
+              <xs:element name="DeuActual" msprop:Generator_ColumnVarNameInTable="columnDeuActual" msprop:Generator_ColumnPropNameInRow="DeuActual" msprop:Generator_ColumnPropNameInTable="DeuActualColumn" msprop:Generator_UserColumnName="DeuActual" type="xs:decimal" />
+              <xs:element name="ProvInicio" msprop:Generator_ColumnVarNameInTable="columnProvInicio" msprop:Generator_ColumnPropNameInRow="ProvInicio" msprop:Generator_ColumnPropNameInTable="ProvInicioColumn" msprop:Generator_UserColumnName="ProvInicio" type="xs:decimal" />
+              <xs:element name="ProvActual" msprop:Generator_ColumnVarNameInTable="columnProvActual" msprop:Generator_ColumnPropNameInRow="ProvActual" msprop:Generator_ColumnPropNameInTable="ProvActualColumn" msprop:Generator_UserColumnName="ProvActual" type="xs:decimal" />
+              <xs:element name="Jerarquia" msprop:Generator_ColumnVarNameInTable="columnJerarquia" msprop:Generator_ColumnPropNameInRow="Jerarquia" msprop:Generator_ColumnPropNameInTable="JerarquiaColumn" msprop:Generator_UserColumnName="Jerarquia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodigoCliente" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCodigoCliente" msprop:Generator_ColumnPropNameInRow="CodigoCliente" msprop:Generator_ColumnPropNameInTable="CodigoClienteColumn" msprop:Generator_UserColumnName="CodigoCliente" type="xs:decimal" />
+              <xs:element name="cliente" msprop:Generator_ColumnVarNameInTable="columncliente" msprop:Generator_ColumnPropNameInRow="cliente" msprop:Generator_ColumnPropNameInTable="clienteColumn" msprop:Generator_UserColumnName="cliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Producto" msprop:Generator_ColumnVarNameInTable="columnProducto" msprop:Generator_ColumnPropNameInRow="Producto" msprop:Generator_ColumnPropNameInTable="ProductoColumn" msprop:Generator_UserColumnName="Producto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotGestEje" msprop:Generator_ColumnVarNameInTable="columnTotGestEje" msprop:Generator_ColumnPropNameInRow="TotGestEje" msprop:Generator_ColumnPropNameInTable="TotGestEjeColumn" msprop:Generator_UserColumnName="TotGestEje" type="xs:decimal" />
+              <xs:element name="TotDeuda" msprop:Generator_ColumnVarNameInTable="columnTotDeuda" msprop:Generator_ColumnPropNameInRow="TotDeuda" msprop:Generator_ColumnPropNameInTable="TotDeudaColumn" msprop:Generator_UserColumnName="TotDeuda" type="xs:decimal" />
+              <xs:element name="r1" msprop:Generator_ColumnVarNameInTable="columnr1" msprop:Generator_ColumnPropNameInRow="r1" msprop:Generator_ColumnPropNameInTable="r1Column" msprop:Generator_UserColumnName="r1" type="xs:decimal" />
+              <xs:element name="r2" msprop:Generator_ColumnVarNameInTable="columnr2" msprop:Generator_ColumnPropNameInRow="r2" msprop:Generator_ColumnPropNameInTable="r2Column" msprop:Generator_UserColumnName="r2" type="xs:decimal" />
+              <xs:element name="r3" msprop:Generator_ColumnVarNameInTable="columnr3" msprop:Generator_ColumnPropNameInRow="r3" msprop:Generator_ColumnPropNameInTable="r3Column" msprop:Generator_UserColumnName="r3" type="xs:decimal" />
+              <xs:element name="TotRecup" msprop:Generator_ColumnVarNameInTable="columnTotRecup" msprop:Generator_ColumnPropNameInRow="TotRecup" msprop:Generator_ColumnPropNameInTable="TotRecupColumn" msprop:Generator_UserColumnName="TotRecup" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

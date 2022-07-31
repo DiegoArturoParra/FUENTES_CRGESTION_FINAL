@@ -1,0 +1,51 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Master_Popup, App_Web_ucsxuope" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Web</title>
+   
+    <%--<link href="../Estilo/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />--%>
+</head>
+<body style="background-color: White">
+    <form id="mainForm" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" AsyncPostBackTimeout="360" runat="server">
+    </asp:ScriptManager>
+    <!-- titulo modulo -->
+    <table cellspacing="0px" cellpadding="0px" width="100%" border="0px">
+        <tr valign="top">
+            <td class="encebezadotabla-2" width="100%" align="center">
+                <b>
+                    <asp:Label ID="lblTituloModulo" runat="server" Text="" ForeColor="White" />
+                </b>
+            </td>
+        </tr>
+    </table>
+    <!-- mensajes y contenido -->
+                <!-- Contenido -->
+            <table class="v14-gray-table-border" cellspacing="0px" cellpadding="0px" width="100%"  border="0">                                        
+                <tr valign="top">
+                     <td style="width: 100%;text-align:center" class="v14-gray-table-border">
+                            <asp:UpdatePanel ID="upMensaje" runat="server" UpdateMode="Always">
+                                <ContentTemplate>
+                                <center>
+                                    <asp:Panel ID="pMensaje" runat="server" Visible="false" BorderStyle="Solid" BorderWidth="150px"
+                                        BorderColor="silver" BackColor="whitesmoke" Width="98%" 
+                                        style="text-align: center">
+                                        <asp:Image ID="imgMensaje" runat="server" />
+                                        <asp:Label ID="lblMensaje" runat="server" ForeColor="red" />
+                                    </asp:Panel>
+                                    <asp:Panel ID="pMensakeList" runat="server" Visible="false" BorderStyle="Solid" BorderWidth="1px"
+                                        BorderColor="silver" BackColor="whitesmoke" Width="98%">
+                                    </asp:Panel>
+                                </center>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                            <asp:ContentPlaceHolder ID="DefaultContent" runat="server">
+                            </asp:ContentPlaceHolder>                                                
+                       </td>
+                 </tr>
+            </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F648D89-839B-46BD-8954-A57780EC9FA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sis.Estudio.Logic</RootNamespace>
+    <AssemblyName>Sis.Estudio.Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MSSQL\Estudio\Gestion\LoAvalDeclaPat.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoAvalDireccio.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoCliente_Gastos.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoClieProdAval.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoCanalContact.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoCronogDePago.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoGaranxProduc.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoProduCliente.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoAplicacion.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoDatosCliente.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoDatosLaboral.cs" />
+    <Compile Include="MSSQL\Gestion\LoDeclaPatrimo.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\LoDirecCliente.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoColumna.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoCalificacionSBS.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoEstadoDireccion.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoGarantia.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoGerencia.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoMoneda.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoProducto.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoSectorista.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoSituacionLaboral.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoSubProducto.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoSucursal.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoTipoBien.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoTipoContacto.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoTipoDireccion.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\LoZona.cs" />
+    <Compile Include="MSSQL\Estudio\Reportes\LoContencionClasificacion.cs" />
+    <Compile Include="MSSQL\Estudio\Reportes\LoContencionGestion.cs" />
+    <Compile Include="MSSQL\Estudio\Reportes\LoContencionTramo.cs" />
+    <Compile Include="MSSQL\Funcionabilidad\LoEncripta.cs" />
+    <Compile Include="MSSQL\Funcionabilidad\LoTransaccion.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_BaseReportes.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_Campaña.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_Carta.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_ClaseGestiones.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_ClaseGestionesxEjecutado.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_ClaseGestionesxTipoGestion.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_Ejecutado.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_EnvioCorreoMasivo.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_Gestion_Cobranza.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_JerarquiaA.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_JerarquiaB.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_JerarquiaC.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_JerarquiaD.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_ReglasGestiones.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_ReglasGestionesxEjecutado.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_ReglasGestionesxTipoGestion.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_Reportes.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_Resultado.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_TipoGestiones.cs" />
+    <Compile Include="MSSQL\Gestion\LoGS_UbigeoColindante.cs" />
+    <Compile Include="MSSQL\Reportes\LoRPT_BaseContencion.cs" />
+    <Compile Include="MSSQL\Seguridad\LoAccion.cs" />
+    <Compile Include="MSSQL\Seguridad\LoLogin.cs" />
+    <Compile Include="MSSQL\Seguridad\LoModulo.cs" />
+    <Compile Include="MSSQL\Seguridad\LoOpcion.cs" />
+    <Compile Include="MSSQL\Seguridad\LoPerfil.cs" />
+    <Compile Include="MSSQL\Seguridad\LoUsuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Librerias\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sis.Estudio.Data\Sis.Estudio.Data.csproj">
+      <Project>{45D9BE05-8758-4FEC-88AE-6E1F1C0573C5}</Project>
+      <Name>Sis.Estudio.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sis.Estudio.Entity\Sis.Estudio.Entity.csproj">
+      <Project>{892FA8A4-6326-4024-9529-952E6C6A45F6}</Project>
+      <Name>Sis.Estudio.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

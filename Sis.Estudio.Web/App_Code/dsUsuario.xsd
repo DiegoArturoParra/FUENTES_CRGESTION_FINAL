@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsUsuario" targetNamespace="http://tempuri.org/dsUsuario.xsd" xmlns:mstns="http://tempuri.org/dsUsuario.xsd" xmlns="http://tempuri.org/dsUsuario.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="MSSQL_ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MSSQL_ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.MSSQL_ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsUsuario" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsUsuario" msprop:Generator_UserDSName="dsUsuario">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTUsuario" msprop:Generator_TableClassName="DTUsuarioDataTable" msprop:Generator_TableVarName="tableDTUsuario" msprop:Generator_TablePropName="DTUsuario" msprop:Generator_RowDeletingName="DTUsuarioRowDeleting" msprop:Generator_UserTableName="DTUsuario" msprop:Generator_RowChangingName="DTUsuarioRowChanging" msprop:Generator_RowEvHandlerName="DTUsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="DTUsuarioRowDeleted" msprop:Generator_RowEvArgName="DTUsuarioRowChangeEvent" msprop:Generator_RowChangedName="DTUsuarioRowChanged" msprop:Generator_RowClassName="DTUsuarioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codusuario" msprop:Generator_ColumnVarNameInTable="columncodusuario" msprop:Generator_ColumnPropNameInRow="codusuario" msprop:Generator_ColumnPropNameInTable="codusuarioColumn" msprop:Generator_UserColumnName="codusuario" type="xs:int" minOccurs="0" />
+              <xs:element name="login3" msprop:Generator_ColumnVarNameInTable="columnlogin3" msprop:Generator_ColumnPropNameInRow="login3" msprop:Generator_ColumnPropNameInTable="login3Column" msprop:Generator_UserColumnName="login3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMBREUSUARIO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNOMBREUSUARIO" msprop:Generator_ColumnPropNameInRow="NOMBREUSUARIO" msprop:Generator_ColumnPropNameInTable="NOMBREUSUARIOColumn" msprop:Generator_UserColumnName="NOMBREUSUARIO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="603" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOQUEADO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBLOQUEADO" msprop:Generator_ColumnPropNameInRow="BLOQUEADO" msprop:Generator_ColumnPropNameInTable="BLOQUEADOColumn" msprop:Generator_UserColumnName="BLOQUEADO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SANULAD" msprop:Generator_ColumnVarNameInTable="columnSANULAD" msprop:Generator_ColumnPropNameInRow="SANULAD" msprop:Generator_ColumnPropNameInTable="SANULADColumn" msprop:Generator_UserColumnName="SANULAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

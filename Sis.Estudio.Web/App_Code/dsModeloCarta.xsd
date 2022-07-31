@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsModeloCarta" targetNamespace="http://tempuri.org/dsModeloCarta1.xsd" xmlns:mstns="http://tempuri.org/dsModeloCarta1.xsd" xmlns="http://tempuri.org/dsModeloCarta1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsModeloCarta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsModeloCarta" msprop:Generator_UserDSName="dsModeloCarta">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTModeloCarta" msprop:Generator_TableClassName="DTModeloCartaDataTable" msprop:Generator_TableVarName="tableDTModeloCarta" msprop:Generator_TablePropName="DTModeloCarta" msprop:Generator_RowDeletingName="DTModeloCartaRowDeleting" msprop:Generator_RowChangingName="DTModeloCartaRowChanging" msprop:Generator_RowEvHandlerName="DTModeloCartaRowChangeEventHandler" msprop:Generator_RowDeletedName="DTModeloCartaRowDeleted" msprop:Generator_UserTableName="DTModeloCarta" msprop:Generator_RowChangedName="DTModeloCartaRowChanged" msprop:Generator_RowEvArgName="DTModeloCartaRowChangeEvent" msprop:Generator_RowClassName="DTModeloCartaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RazonSocial" msprop:Generator_ColumnVarNameInTable="columnRazonSocial" msprop:Generator_ColumnPropNameInRow="RazonSocial" msprop:Generator_ColumnPropNameInTable="RazonSocialColumn" msprop:Generator_UserColumnName="RazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="RUC" msprop:Generator_ColumnVarNameInTable="columnRUC" msprop:Generator_ColumnPropNameInRow="RUC" msprop:Generator_ColumnPropNameInTable="RUCColumn" msprop:Generator_UserColumnName="RUC" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto" msprop:Generator_ColumnVarNameInTable="columnProducto" msprop:Generator_ColumnPropNameInRow="Producto" msprop:Generator_ColumnPropNameInTable="ProductoColumn" msprop:Generator_UserColumnName="Producto" type="xs:string" minOccurs="0" />
+              <xs:element name="SubProducto" msprop:Generator_ColumnVarNameInTable="columnSubProducto" msprop:Generator_ColumnPropNameInRow="SubProducto" msprop:Generator_ColumnPropNameInTable="SubProductoColumn" msprop:Generator_UserColumnName="SubProducto" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion_carta" msprop:Generator_ColumnVarNameInTable="columnDescripcion_carta" msprop:Generator_ColumnPropNameInRow="Descripcion_carta" msprop:Generator_ColumnPropNameInTable="Descripcion_cartaColumn" msprop:Generator_UserColumnName="Descripcion_carta" type="xs:string" minOccurs="0" />
+              <xs:element name="Pie_carta" msprop:Generator_ColumnVarNameInTable="columnPie_carta" msprop:Generator_ColumnPropNameInRow="Pie_carta" msprop:Generator_ColumnPropNameInTable="Pie_cartaColumn" msprop:Generator_UserColumnName="Pie_carta" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion_direccion" msprop:Generator_ColumnVarNameInTable="columnDescripcion_direccion" msprop:Generator_ColumnPropNameInRow="Descripcion_direccion" msprop:Generator_ColumnPropNameInTable="Descripcion_direccionColumn" msprop:Generator_UserColumnName="Descripcion_direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="Referencia_direccion" msprop:Generator_ColumnVarNameInTable="columnReferencia_direccion" msprop:Generator_ColumnPropNameInRow="Referencia_direccion" msprop:Generator_ColumnPropNameInTable="Referencia_direccionColumn" msprop:Generator_UserColumnName="Referencia_direccion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

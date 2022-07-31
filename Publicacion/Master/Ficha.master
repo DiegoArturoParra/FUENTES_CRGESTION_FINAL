@@ -1,0 +1,60 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Master_Ficha, App_Web_ucsxuope" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>    
+    <link href="../Estilo/cssUpdateProgress.css" rel="stylesheet" type="text/css" />
+    <link href="../Estilo/Ficha.css" rel="stylesheet" type="text/css" />
+    <link href="../Estilo/bootstrap-combined.min.css" rel="stylesheet" />
+    <link href="../Estilo/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <style type="text/css">
+        .textBox
+        {
+        width: 150px;
+        border-radius: 4px 4px 4px 4px;
+        color: #555555;
+        display: inline-block;
+        font-size: 14px;
+        height: 12px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        padding: 4px 6px;
+        vertical-align: middle;
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+    </style>
+    <script type="text/javascript">
+        function ResizeFicha(idifame) {
+            parent.actualizaf(idifame);
+        }
+    </script>    
+</head>
+<body >
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" AsyncPostBackTimeout="360" runat="server">
+    </asp:ScriptManager>
+    <div>
+    <asp:UpdatePanel ID="upMensaje" runat="server" UpdateMode="Always">
+            <ContentTemplate>
+                <center>
+                    <asp:Panel ID="pMensaje" runat="server" Visible="false" BorderStyle="Solid" BorderWidth="1px"
+                        BorderColor="silver" BackColor="whitesmoke" Width="98%" Style="text-align: center">
+                        <asp:Image ID="imgMensaje" runat="server" />
+                        <asp:Label ID="lblMensaje" runat="server" ForeColor="red" />
+                    </asp:Panel>
+                    <asp:Panel ID="pMensakeList" runat="server" Visible="false" BorderStyle="Solid" BorderWidth="1px"
+                        BorderColor="silver" BackColor="whitesmoke" Width="98%">
+                    </asp:Panel>
+                </center>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

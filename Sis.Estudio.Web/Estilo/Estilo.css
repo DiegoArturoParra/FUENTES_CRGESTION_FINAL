@@ -1,0 +1,91 @@
+﻿
+
+.textoblanco {
+	font-family: Trebuchet MS,Times New Roman;
+	font-size: 10px;
+	color: #ffffff;
+
+}
+
+.textonegro {
+	font-family: Trebuchet MS,Times New Roman;
+	font-size: 10px;
+	color: #000000;
+
+}
+
+.Marco {
+	border-left: 1 solid #cccccc; 
+	border-top: 1 solid #cccccc; 
+	border-bottom: 1 solid #cccccc;
+	border-right: 1 solid #cccccc; 
+}
+
+.lineaizq{
+	border-left: 1 solid #cccccc; 
+}
+.lineader {
+	border-right: 1 solid #cccccc; 
+}
+.lineasup {
+	border-top: 1 solid #cccccc; 
+}
+.lineainf {
+	border-bottom: 1 solid #cccccc; 
+}
+
+Table.cabecera 
+{
+background-image:url('../imagenes/cabecera.png');
+}
+
+.pie 
+{
+background-image:url('../imagenes/pie.jpg');
+}
+
+
+.lateralder 
+{
+background-image:url('../imagenes/laterader-cabecera.jpg');
+}
+
+.lateralizq
+{
+background-image:url('../imagenes/lateraizq-cabecera.jpg');
+}
+
+.login
+{
+background-image:url('../imagenes/fondoLogueo.png');
+	text-align: right;
+}
+
+.panelsup
+{
+background-image:url('../imagenes/panelsup.png');
+}
+
+.panelinf
+{
+background-image:url('../imagenes/panelinf.png');
+}
+
+.panelmedio
+{
+background-image:url('../imagenes/panelmedio.png');
+}
+
+#mainForm 
+{
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+form 
+{
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+

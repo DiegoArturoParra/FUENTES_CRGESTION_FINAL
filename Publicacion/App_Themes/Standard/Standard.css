@@ -1,0 +1,459 @@
+﻿body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	height:100%;
+}
+
+html {
+	height:100%;
+	}
+
+
+table.cabecera 
+{
+    height:65px;
+    width:100%;
+    margin-top:0;
+    border-collapse:collapse;
+    border:none;
+}
+
+tr.cabecera 
+{
+    height:40px;
+    background-image:url('image/cabecera5.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+    tr.cabecera td 
+    {
+        padding:0;
+        text-align:right;
+        padding-right:1.5%;
+    }
+
+
+tr.menu 
+{
+    background-image:url('image/menu.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+    tr.menu td 
+    {
+        padding:0;
+    }
+
+        tr.menu td.menuDer 
+        {
+            padding-right:1.5%;
+            text-align:right;
+        }
+
+        tr.menu td.menuIzq 
+        {
+            padding-left:1.5%;
+            color: #404040;
+        }
+
+.pie 
+{
+    background-image:url('image/pie.jpg');
+}
+.items_pie {
+    float:left;
+    padding:5px 20px;
+    font-weight: bold;
+    font-size:14px;
+}
+.centrado {
+    margin-top:2px;
+    text-align: center;
+    background-color: #E3E3E3;/*#418bcc;*/
+}
+
+
+TD.lateralder
+{
+background-image:url('image/laterader-cabecera.jpg');
+}
+
+
+TD.lateralizq
+{
+background-image:url('image/lateraizq-cabecera.jpg');
+}
+
+
+.CajaTextoDisable
+{
+background-color:#cccccc
+}
+
+.labeltextoblanco
+{
+
+	color: white;
+	font-family: Trebuchet MS,Times New Roman;
+	font-size: 12pt;
+	text-decoration: none;
+	
+}
+
+.labeltextonegro
+{
+
+	color:Navy;
+	font-family:Trebuchet MS,Times New Roman;
+	font-size: 12pt;
+    font-weight:bold;
+	text-decoration: none;
+	
+}
+
+.linkbutton
+{
+	font-weight: normal;
+	color: #404040;
+	font-family: Trebuchet MS,Times New Roman;
+	text-align: center;
+	table-layout: fixed;
+	vertical-align: middle;
+	display: inline;
+	font-size: 12pt;
+    font-weight:bold;
+	text-decoration: none;
+}
+
+
+
+.textoblanco
+{
+	font-weight: normal;
+	color: #ffffff;
+	font-family: Trebuchet MS,Times New Roman;
+	text-align: center;
+	/*table-layout: fixed;*/
+	vertical-align: middle;
+	display: inline;
+	font-size: 12pt;
+	text-decoration: none;
+	margin-top:10%;
+}
+
+
+
+.Etiqueta
+{
+	font-weight: normal;
+	color: #000000;
+	font-family: Trebuchet MS,Times New Roman;
+	text-align: center;
+	table-layout: fixed;
+	vertical-align: middle;
+	display: inline;
+	font-size: 12pt;
+	text-decoration: none;
+	
+}
+
+.GridViewFila
+{
+	font-size: 12px;
+	
+	font-family: Trebuchet MS, Times New Roman;
+	background-color: #ffffff;
+	padding-bottom: 4px;
+	padding-top: 3px;
+	padding-left: 6px;
+	color: #000000;
+	text-align:left;
+}
+.GridViewFila:hover
+{
+    text-decoration:none;    
+}
+.GridViewFilaSeleccionada:hover
+{
+    text-decoration:none;    
+}
+.GridViewFilaSeleccionada
+{
+	font-size: 12px;
+	font-family: Trebuchet MS, Times New Roman;
+	background-color: #F5F5d0;
+	padding-bottom: 4px;
+	padding-top: 3px;
+	padding-left: 6px;
+	color: #000000;
+	text-align: left;
+}
+.GridViewPaginador
+{
+    font-size:large;
+}
+.GridViewCabecera
+{	    
+	background-color: #666666;
+	font-size: 12px;
+	font-family: Trebuchet MS, Times New Roman;
+	text-align: center;
+	padding-bottom: 4px;
+	padding-top: 3px;
+	padding-left: 6px;		
+}
+.GridViewFilaEdicion
+{
+}
+.GridViewFilaAlterna
+{
+	font-size: 12px;
+	font-family: Trebuchet MS, Times New Roman;
+	background-color: #f8f8f8;
+	padding-bottom: 4px;
+	padding-top: 3px;
+	padding-left: 6px;
+	color: #000000;
+	text-align: left;
+}
+
+td.encebezadotabla-2 {
+	FONT-SIZE: 15pt;
+	FONT-FAMILY:Trebuchet MS,Times New Roman;
+	PADDING-BOTTOM: 4px; 
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 6px;
+	COLOR: #fff;
+    border-style:none;
+    background:#2F63CB;
+    /*background:#98a2b4*/
+	
+}
+
+td.encebezadotabla-3 {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: "Frutiger Light", "ITC Century Light", Arial, "Times New Roman";
+	PADDING-BOTTOM: 4px; 
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 6px;
+	COLOR: #000000;
+	background-color: #d2d2d2;
+}
+th {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	FONT-FAMILY: "Frutiger Light", "ITC Century Light", Arial, "Times New Roman";
+	PADDING-BOTTOM: 4px; 
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 6px;
+	COLOR: #000000;
+	background-color: #d2d2d2;
+}
+
+.hidden {
+	display: none;
+	visibility : visible;
+}
+
+.cabeceraScroll
+{	    
+    background:  	#C0C0C0;
+    
+	font-size: 15px;
+	font-family: Trebuchet MS,Times New Roman;
+	text-align: center;
+	
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 1px;
+
+}
+
+.cabeceraScroll td
+{	    
+    vertical-align:top;
+
+}
+.pagerstyle 
+{
+	FONT-SIZE: 13px;
+	FONT-FAMILY:Trebuchet MS,Times New Roman;
+	text-align:right;
+	background-color:#98a2b4
+
+;
+	color: #ffffff;
+    
+}
+.margenSupInf {
+    margin-top:8px;
+    margin-bottom:8px
+}
+
+
+
+.selectedrow
+{
+	font-family: Trebuchet MS,Times New Roman;
+	background: #999999;
+	color: #FFFFFF;	
+	font-size: 12px;
+}
+
+.selectedrow4:hover
+{
+    text-decoration:none;
+}
+.selectedrow4
+{  
+	font-family: Trebuchet MS, Times New Roman;
+    text-decoration: underline;       
+	font-size: 12px;
+	color: #000000;			
+    background-position: bottom left;
+    background: #cccccc;
+	cursor: pointer;	
+}
+
+
+td.celda-titulo
+{
+	border-right: gainsboro 1pt solid;
+	border-top: gainsboro 1pt solid;
+	border-left: gainsboro 1pt solid;
+	border-bottom: gainsboro 1pt solid;
+	background-color: #f5f5ee;
+    font-size:15px;
+}
+
+
+input[disabled="disabled"] {
+        background-color:  #E9E9E9;
+    }
+
+
+
+.st_CajaTexto02
+{
+  background-color:white;    
+  text-align: left; 
+  
+
+}
+.st_CajaTexto01
+{        
+    background-color: white;
+    text-align: left;
+    
+    
+}
+
+/*.0B0A9;
+{
+ 	 
+	 font-size: 12px;	 
+	 width: 180px;
+	 color: #000048;
+	 font-family: Arial;
+	 background-color:  #f5f5ee;
+}*/
+
+
+
+
+.GridViewCabeceraMini
+{	
+	color: white;	
+    background-color: #4d7893;	
+    font-weight: bold;	
+    font-size: 10px;
+    text-align:center;
+
+}
+
+.GridViewFilaMini
+{
+	font-size: 12px;
+	font-family: "Frutiger Light" , "ITC Century Light" , Arial, "Times New Roman";
+	background-color: #ffffff;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 2px;
+	color: #000000;
+	text-align:left;
+	
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;	
+    
+}
+
+.st_PanelPopupAjax01
+{   
+    border:2px solid #000; 
+    border-color:silver;
+    background-color:White;
+    padding:5px;
+} 
+
+
+.st_bordeplomo
+{   
+    border:2px solid #000; 
+    border-color:silver;    
+    padding:5px;
+} 
+.btnGrabar_Click
+{
+     background-color:White;
+     	color: White;
+    }
+    
+ #ctl00_DefaultContent_btnGrabar
+ {
+        background-color:White;
+     	color: White;
+}
+
+#mainForm 
+{
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+form 
+{
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+tr.leyenda 
+{
+    
+}
+
+td.leyenda 
+{
+    border:1px solid groove black;
+}
+
+img.leyenda 
+{
+    margin-top:0.5%;
+}
+
+.botonAccion 
+{
+    background: #000080;
+    background-color:#000080;
+}

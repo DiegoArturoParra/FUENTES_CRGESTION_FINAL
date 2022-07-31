@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsModulo" targetNamespace="http://tempuri.org/dsModulo.xsd" xmlns:mstns="http://tempuri.org/dsModulo.xsd" xmlns="http://tempuri.org/dsModulo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="MSSQL_ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MSSQL_ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.MSSQL_ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsModulo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsModulo" msprop:Generator_UserDSName="dsModulo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTModulo" msprop:Generator_TableClassName="DTModuloDataTable" msprop:Generator_TableVarName="tableDTModulo" msprop:Generator_TablePropName="DTModulo" msprop:Generator_RowDeletingName="DTModuloRowDeleting" msprop:Generator_UserTableName="DTModulo" msprop:Generator_RowChangingName="DTModuloRowChanging" msprop:Generator_RowEvHandlerName="DTModuloRowChangeEventHandler" msprop:Generator_RowDeletedName="DTModuloRowDeleted" msprop:Generator_RowEvArgName="DTModuloRowChangeEvent" msprop:Generator_RowChangedName="DTModuloRowChanged" msprop:Generator_RowClassName="DTModuloRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdModulo" msprop:Generator_ColumnVarNameInTable="columnIdModulo" msprop:Generator_ColumnPropNameInRow="IdModulo" msprop:Generator_ColumnPropNameInTable="IdModuloColumn" msprop:Generator_UserColumnName="IdModulo" type="xs:string" minOccurs="0" />
+              <xs:element name="CodSistema" msprop:Generator_ColumnVarNameInTable="columnCodSistema" msprop:Generator_ColumnPropNameInRow="CodSistema" msprop:Generator_ColumnPropNameInTable="CodSistemaColumn" msprop:Generator_UserColumnName="CodSistema" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CEmpresa" msprop:Generator_ColumnVarNameInTable="columnCEmpresa" msprop:Generator_ColumnPropNameInRow="CEmpresa" msprop:Generator_ColumnPropNameInTable="CEmpresaColumn" msprop:Generator_UserColumnName="CEmpresa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SAnulad" msprop:Generator_ColumnVarNameInTable="columnSAnulad" msprop:Generator_ColumnPropNameInRow="SAnulad" msprop:Generator_ColumnPropNameInTable="SAnuladColumn" msprop:Generator_UserColumnName="SAnulad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodUsuarioRegistra" msprop:Generator_ColumnVarNameInTable="columnCodUsuarioRegistra" msprop:Generator_ColumnPropNameInRow="CodUsuarioRegistra" msprop:Generator_ColumnPropNameInTable="CodUsuarioRegistraColumn" msprop:Generator_UserColumnName="CodUsuarioRegistra" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaRegistra" msprop:Generator_ColumnVarNameInTable="columnFechaRegistra" msprop:Generator_ColumnPropNameInRow="FechaRegistra" msprop:Generator_ColumnPropNameInTable="FechaRegistraColumn" msprop:Generator_UserColumnName="FechaRegistra" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CodUsuarioModifica" msprop:Generator_ColumnVarNameInTable="columnCodUsuarioModifica" msprop:Generator_ColumnPropNameInRow="CodUsuarioModifica" msprop:Generator_ColumnPropNameInTable="CodUsuarioModificaColumn" msprop:Generator_UserColumnName="CodUsuarioModifica" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaModifica" msprop:Generator_ColumnVarNameInTable="columnFechaModifica" msprop:Generator_ColumnPropNameInRow="FechaModifica" msprop:Generator_ColumnPropNameInTable="FechaModificaColumn" msprop:Generator_UserColumnName="FechaModifica" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CodUsuarioAnula" msprop:Generator_ColumnVarNameInTable="columnCodUsuarioAnula" msprop:Generator_ColumnPropNameInRow="CodUsuarioAnula" msprop:Generator_ColumnPropNameInTable="CodUsuarioAnulaColumn" msprop:Generator_UserColumnName="CodUsuarioAnula" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAnula" msprop:Generator_ColumnVarNameInTable="columnFechaAnula" msprop:Generator_ColumnPropNameInRow="FechaAnula" msprop:Generator_ColumnPropNameInTable="FechaAnulaColumn" msprop:Generator_UserColumnName="FechaAnula" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

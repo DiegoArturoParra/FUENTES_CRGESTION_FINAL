@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{892FA8A4-6326-4024-9529-952E6C6A45F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sis.Estudio.Entity</RootNamespace>
+    <AssemblyName>Sis.Estudio.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MSSQL\EnModelo.cs" />
+    <Compile Include="MSSQL\EnOperador.cs" />
+    <Compile Include="MSSQL\EnCargaTercero.cs" />
+    <Compile Include="MSSQL\EnAccion.cs" />
+    <Compile Include="MSSQL\EnAplicacion.cs" />
+    <Compile Include="MSSQL\EnAvalDeclaPat.cs" />
+    <Compile Include="MSSQL\EnAvalDireccio.cs" />
+    <Compile Include="MSSQL\EnCalificacionSBS.cs" />
+    <Compile Include="MSSQL\EnCanalContact.cs" />
+    <Compile Include="MSSQL\EnCargaInicialMasiva.cs" />
+    <Compile Include="MSSQL\EnCargaInicialPagos.cs" />
+    <Compile Include="MSSQL\EnCliente_Gastos.cs" />
+    <Compile Include="MSSQL\EnClieProdAval.cs" />
+    <Compile Include="MSSQL\EnColumna.cs" />
+    <Compile Include="MSSQL\EnContencionClasificacion.cs" />
+    <Compile Include="MSSQL\EnContencionGestion.cs" />
+    <Compile Include="MSSQL\EnContencionTramo.cs" />
+    <Compile Include="MSSQL\EnCronogDePago.cs" />
+    <Compile Include="MSSQL\EnDatosCliente.cs" />
+    <Compile Include="MSSQL\EnDatosLaboral.cs" />
+    <Compile Include="MSSQL\EnDeclaPatrimo.cs" />
+    <Compile Include="MSSQL\EnDirecCliente.cs" />
+    <Compile Include="MSSQL\EnEstadoDireccion.cs" />
+    <Compile Include="MSSQL\EnGarantia.cs" />
+    <Compile Include="MSSQL\EnGaranxProduc.cs" />
+    <Compile Include="MSSQL\EnGerencia.cs" />
+    <Compile Include="MSSQL\EnGS_BaseReportes.cs" />
+    <Compile Include="MSSQL\EnGS_Campaña.cs" />
+    <Compile Include="MSSQL\EnGS_Carta.cs" />
+    <Compile Include="MSSQL\EnGS_ClaseGestiones.cs" />
+    <Compile Include="MSSQL\EnGS_ClaseGestionesxEjecutado.cs" />
+    <Compile Include="MSSQL\EnGS_ClaseGestionesxTipoGestion.cs" />
+    <Compile Include="MSSQL\EnGS_Ejecutado.cs" />
+    <Compile Include="MSSQL\EnGS_EnvioCorreoMasivo.cs" />
+    <Compile Include="MSSQL\EnGS_Gestion_Cobranza.cs" />
+    <Compile Include="MSSQL\EnGS_JerarquiaA.cs" />
+    <Compile Include="MSSQL\EnGS_JerarquiaB.cs" />
+    <Compile Include="MSSQL\EnGS_JerarquiaC.cs" />
+    <Compile Include="MSSQL\EnGS_JerarquiaD.cs" />
+    <Compile Include="MSSQL\EnGS_ReglasGestiones.cs" />
+    <Compile Include="MSSQL\EnGS_ReglasGestionesxEjecutado.cs" />
+    <Compile Include="MSSQL\EnGS_ReglasGestionesxTipoGestion.cs" />
+    <Compile Include="MSSQL\EnGS_Reportes.cs" />
+    <Compile Include="MSSQL\EnGS_Resultado.cs" />
+    <Compile Include="MSSQL\EnGS_TipoGestiones.cs" />
+    <Compile Include="MSSQL\EnGS_UbigeoColindante.cs" />
+    <Compile Include="MSSQL\EnLogin.cs" />
+    <Compile Include="MSSQL\EnModulo.cs" />
+    <Compile Include="MSSQL\EnMoneda.cs" />
+    <Compile Include="MSSQL\EnOpcion.cs" />
+    <Compile Include="MSSQL\EnOpcionAccion.cs" />
+    <Compile Include="MSSQL\EnPerfil.cs" />
+    <Compile Include="MSSQL\EnProducto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\EnRPT_BaseContencion.cs" />
+    <Compile Include="MSSQL\EnSectorista.cs" />
+    <Compile Include="MSSQL\EnSituacionLaboral.cs" />
+    <Compile Include="MSSQL\EnSucursal.cs" />
+    <Compile Include="MSSQL\EnTipoBien.cs" />
+    <Compile Include="MSSQL\EnTipoContacto.cs" />
+    <Compile Include="MSSQL\EnTransaccion.cs" />
+    <Compile Include="MSSQL\EnProduCliente.cs" />
+    <Compile Include="MSSQL\EnTipoDireccion.cs" />
+    <Compile Include="MSSQL\EnSubProducto.cs" />
+    <Compile Include="MSSQL\EnUsuario.cs" />
+    <Compile Include="MSSQL\EnZona.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

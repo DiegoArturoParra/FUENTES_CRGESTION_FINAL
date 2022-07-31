@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45D9BE05-8758-4FEC-88AE-6E1F1C0573C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sis.Estudio.Data</RootNamespace>
+    <AssemblyName>Sis.Estudio.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MSSQL\Estudio\Gestion\DaAplicacion.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaAvalDeclaPat.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaAvalDireccio.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaCanalContact.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaCliente_Gastos.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaClieProdAval.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaCronogDePago.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaDatosCliente.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaDatosLaboral.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaDeclaPatrimo.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaDirecCliente.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaGaranxProduc.cs" />
+    <Compile Include="MSSQL\Estudio\Gestion\DaProduCliente.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaColumna.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaCalificacionSBS.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaEstadoDireccion.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaGarantia.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaGerencia.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaMoneda.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaProducto.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaSectorista.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaSituacionLaboral.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaSubProducto.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaSucursal.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaTipoBien.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaTipoContacto.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaTipoDireccion.cs" />
+    <Compile Include="MSSQL\Estudio\Maestros\DaZona.cs" />
+    <Compile Include="MSSQL\Estudio\Reportes\DaContencionClasificacion.cs" />
+    <Compile Include="MSSQL\Estudio\Reportes\DaContencionGestion.cs" />
+    <Compile Include="MSSQL\Estudio\Reportes\DaContencionTramo.cs" />
+    <Compile Include="MSSQL\Funcionabilidad\DaConexion.cs" />
+    <Compile Include="MSSQL\Funcionabilidad\DaTransaction.cs" />
+    <Compile Include="MSSQL\Funcionabilidad\SqlHelper.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_BaseReportes.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_Campaña.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_Carta.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_ClaseGestiones.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_ClaseGestionesxEjecutado.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_ClaseGestionesxTipoGestion.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_Ejecutado.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_EnvioCorreoMasivo.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_Gestion_Cobranza.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_JerarquiaA.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_JerarquiaB.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_JerarquiaC.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_JerarquiaD.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_ReglasGestiones.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_ReglasGestionesxEjecutado.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_ReglasGestionesxTipoGestion.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_Reportes.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_Resultado.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_TipoGestiones.cs" />
+    <Compile Include="MSSQL\Gestion\DaGS_UbigeoColindante.cs" />
+    <Compile Include="MSSQL\Reportes\DaRPT_BaseContencion.cs" />
+    <Compile Include="MSSQL\Seguridad\DaAccion.cs" />
+    <Compile Include="MSSQL\Seguridad\DaLogin.cs" />
+    <Compile Include="MSSQL\Seguridad\DaModulo.cs" />
+    <Compile Include="MSSQL\Seguridad\DaOpcion.cs" />
+    <Compile Include="MSSQL\Seguridad\DaPerfil.cs" />
+    <Compile Include="MSSQL\Seguridad\DaUsuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sis.Estudio.Entity\Sis.Estudio.Entity.csproj">
+      <Project>{892FA8A4-6326-4024-9529-952E6C6A45F6}</Project>
+      <Name>Sis.Estudio.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

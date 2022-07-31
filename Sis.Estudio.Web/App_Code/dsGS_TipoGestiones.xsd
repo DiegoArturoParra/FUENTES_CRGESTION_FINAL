@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGS_TipoGestiones" targetNamespace="http://tempuri.org/dsGS_TipoGestiones.xsd" xmlns:mstns="http://tempuri.org/dsGS_TipoGestiones.xsd" xmlns="http://tempuri.org/dsGS_TipoGestiones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGS_TipoGestiones" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsGS_TipoGestiones" msprop:Generator_UserDSName="dsGS_TipoGestiones">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTGS_TipoGestiones" msprop:Generator_TableClassName="DTGS_TipoGestionesDataTable" msprop:Generator_TableVarName="tableDTGS_TipoGestiones" msprop:Generator_RowChangedName="DTGS_TipoGestionesRowChanged" msprop:Generator_TablePropName="DTGS_TipoGestiones" msprop:Generator_RowDeletingName="DTGS_TipoGestionesRowDeleting" msprop:Generator_RowChangingName="DTGS_TipoGestionesRowChanging" msprop:Generator_RowEvHandlerName="DTGS_TipoGestionesRowChangeEventHandler" msprop:Generator_RowDeletedName="DTGS_TipoGestionesRowDeleted" msprop:Generator_RowClassName="DTGS_TipoGestionesRow" msprop:Generator_UserTableName="DTGS_TipoGestiones" msprop:Generator_RowEvArgName="DTGS_TipoGestionesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodTipoGestion" msprop:Generator_ColumnVarNameInTable="columnCodTipoGestion" msprop:Generator_ColumnPropNameInRow="CodTipoGestion" msprop:Generator_ColumnPropNameInTable="CodTipoGestionColumn" msprop:Generator_UserColumnName="CodTipoGestion" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

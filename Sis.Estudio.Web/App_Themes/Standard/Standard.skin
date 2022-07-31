@@ -1,0 +1,62 @@
+ <%-- Para control Menu --%>
+ 
+ <asp:Menu SkinID="_menuExito" runat="server" 
+  Font-Bold="True"
+  ForeColor="#404040"
+  Font-names="Trebuchet MS"
+  Font-size= "12pt"
+
+  DynamicMenuStyle-BackColor="#DBE1E2"
+  DynamicMenuStyle-BorderColor="#004589"
+  DynamicMenuStyle-BorderStyle="solid"
+  DynamicMenuStyle-BorderWidth="1"
+
+  DynamicHoverStyle-ForeColor="#000000"
+  DynamicHoverStyle-BackColor="#cccccc">
+  <StaticHoverStyle ForeColor="#404040"  Font-Bold="True"  />
+  <DynamicMenuItemStyle HorizontalPadding="10px"  VerticalPadding="2px"  Font-Bold="True" Width="180px"   />
+  <DynamicHoverStyle ForeColor="#000000" Font-Bold="True"  />
+</asp:Menu>
+
+
+ <%-- Para control TextBox --%> 
+ 
+ <asp:TextBox runat="server" CssClass="st_CajaTexto01"   onfocus="javascript:this.className='st_CajaTexto02';" onblur="javascript:this.className='st_CajaTexto01';" > 
+  
+ </asp:TextBox>
+
+ 
+
+
+ <asp:TextBox skinId="disabled" runat="server" CssClass="textboxDisabled"  onkeydown="return Control_Locked(event);"  onPaste="return false;" onCut="return false;" ></asp:TextBox>
+
+
+ <%-- Para control Label --%>
+ <asp:Label runat="server" skinid="labeltextonegro" CssClass="labeltextonegro" ></asp:Label>
+ <asp:Label runat="server" skinid="labeltextoblanco" CssClass="labeltextoblanco" ></asp:Label>
+
+  <%-- Para control LinkButton --%>
+ <asp:LinkButton runat="server" ></asp:LinkButton>
+  <asp:LinkButton runat="server" skinid="linkbutton" CssClass="linkbutton" ></asp:LinkButton>
+
+
+   <asp:GridView runat="server" AutoGenerateColumns="False" CellPadding="3" ForeColor="#ffffff" GridLines="Both" Width="100%" AllowPaging="False" BorderStyle="Solid" BorderWidth="2pt">
+    <FooterStyle Font-Bold="True"  />
+    <RowStyle CssClass="GridViewFila" />
+    <SelectedRowStyle CssClass="selectedrow4" />
+    <PagerStyle CssClass="GridViewPaginador"  />
+    <HeaderStyle  CssClass="GridViewCabecera"  />
+    <EditRowStyle CssClass="GridViewFilaEdicion"  />
+    <AlternatingRowStyle CssClass="GridViewFilaAlterna" />
+    <PagerSettings Mode="NumericFirstLast" />  
+    </asp:GridView>
+
+ <asp:GridView skinId="Mini" runat="server" AutoGenerateColumns="False" CellPadding="0" ForeColor="#333333"   AllowPaging="False" CssClass="Grid">
+    <FooterStyle BackColor="#8F8F8F" Font-Bold="True" ForeColor="White" />
+    <RowStyle CssClass="GridViewFilaMini" />
+    <SelectedRowStyle CssClass="GridViewFilaSeleccionada" />
+    <PagerStyle CssClass="GridViewPaginador"  />
+    <HeaderStyle  CssClass="GridViewCabeceraMini"  />
+    <EditRowStyle CssClass="GridViewFilaEdicion"  />
+    <PagerSettings Mode="NumericFirstLast" />          
+</asp:GridView>

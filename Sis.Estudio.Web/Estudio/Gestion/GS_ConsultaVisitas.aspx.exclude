@@ -1,0 +1,177 @@
+﻿<%@ Register Assembly="GMaps" Namespace="Subgurim.Controles" TagPrefix="cc1" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="GS_ConsultaVisitas.aspx.cs" Inherits="Estudio_Gestion_GS_ConsultaVisitas" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="GMDatePicker" Namespace="GrayMatterSoft" TagPrefix="cc2" %>
+<%@ Register Assembly="Flan.Controls" Namespace="Flan.Controls" TagPrefix="cc3" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ MasterType VirtualPath="~/Master/Ceem.master" %>
+
+
+<head id="Head1" runat="server">
+    <title> </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <style type="text/css">
+        .modalBackground
+        {
+            background-color: blue;
+            filter: alpha(opacity=70);
+            opacity: 0.7;
+        }
+        
+        .style1
+        {
+            width: 10px;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+</head>
+<!--  cuerpo -->
+
+<body>
+    <form id="mainForm" runat="server">
+    <!-- Cabecera -->
+    <asp:ScriptManager AsyncPostBackTimeout="360" ID="ScriptManager1" runat="server"
+        EnableScriptGlobalization="true" EnableScriptLocalization="true">
+    </asp:ScriptManager>
+    <table style="width: 100%; height: 100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td height="67px">
+                <uc1:UCCabecera ID="UCCabecera1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="filter: progid:DXImageTransform.Microsoft.Gradient(endColorstr='#ffffff', startColorstr='#E0E0E0', gradientType='0'); margin-bottom:0; padding-bottom:0; height:50px;">
+                <!-- Contenido -->
+                <table cellspacing="0px" cellpadding="0px" style="width: 100%;" border="0px">
+                    <tr valign="top">
+                        <!-- izquierda -->
+                        <td style="width: 100%">
+                            <table id="content-table" cellspacing="0px" cellpadding="0px" style="width: 100%"
+                                border="0px">
+                                <tr valign="top">
+                                    <td style="width: 100%">
+                                        <table cellspacing="0px" cellpadding="0px" width="100%" border="0px">
+                                            <tr valign="top">
+                                                <td class="encebezadotabla-2" width="100%" align="center">
+                                                    <b>
+                                                        <asp:Label ID="lblTituloModulo" runat="server" Text="Seguimiento Visitas de Campo" />
+                                                    </b> 
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- mensajes y contenido -->
+                                        <table class="v14-gray-table-border" cellspacing="0px" cellpadding="0px" width="100%"
+                                            border="0">
+                                            <tr valign="top">
+                                                <td style="width: 100%" class="v14-gray-table-border">
+                                                    <div>
+                                                        <asp:UpdatePanel ID="upMensaje" runat="server" UpdateMode="Always">
+                                                            <ContentTemplate>
+                                                                <asp:Panel ID="pMensaje" runat="server" Visible="false" BorderStyle="Solid" BorderWidth="1px"
+                                                                    BorderColor="silver" BackColor="whitesmoke" Width="100%" Style="text-align: center">
+                                                                    <asp:Image ID="imgMensaje" runat="server" />
+                                                                    <asp:Label ID="lblMensaje" runat="server" ForeColor="red" CssClass="Etiqueta" />
+                                                                </asp:Panel>
+                                                                <asp:Panel ID="pMensakeList" runat="server" Visible="false" BorderStyle="Solid" BorderWidth="1px"
+                                                                    BorderColor="silver" BackColor="whitesmoke" Width="100%">
+                                                                </asp:Panel>
+                                                            </ContentTemplate>
+                                                        </asp:UpdatePanel>
+                                                        
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="style1">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!-- derecha- menu lateral derecho -->
+                        <td style="width: 150px">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group col-md-12">
+                    <div class="rounded">
+                        <div class="form-row col-md-5">
+                            <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Always">
+                                <ContentTemplate>
+                                    <asp:Panel ID="Panel1" runat="server" Visible="true" BorderStyle="Solid" BorderWidth="1px"
+                                        BorderColor="silver" BackColor="whitesmoke" Width="100%" Style="text-align: left; padding-left: 60px;">--%>
+                                        <br /><br />
+                                        Seleccione:
+                                        <br />
+                                                <asp:DropDownList ID="cmb_Asesores" runat="server" TabIndex="6" Width="250px" 
+                                                                AutoPostBack="true" Height="16px" OnSelectedIndexChanged="cmb_Asesores_SelectedIndexChanged">
+                                                            </asp:DropDownList>
+                                        <br /><br />
+                                        Fecha de Registro del Action Plan:
+                                        <br />
+                                        Del
+                                            <asp:TextBox ID="txt_FECHAINI" runat="server" Enabled="false" Height="18px" MaxLength="10"
+                                                TabIndex="5" Width="92px"></asp:TextBox>
+                                            <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" PopupButtonID="imgCal1"
+                                                TargetControlID="txt_FECHAINI" />
+                                            <asp:ImageButton ID="imgCal1" runat="Server" AlternateText="Mostrar calendario" ImageUrl="~/imagenes/Calendar.png" />
+                                            &nbsp;al
+                                            <asp:TextBox ID="txt_FECHAFIN" runat="server" Enabled="false" Height="18px" MaxLength="10"
+                                                TabIndex="5" Width="92px"></asp:TextBox>
+                                            <ajaxToolkit:CalendarExtender ID="CalendarExtender2" runat="server" PopupButtonID="imgCal2"
+                                                TargetControlID="txt_FECHAFIN" />
+                                            <asp:ImageButton ID="imgCal2" runat="Server" AlternateText="Mostrar calendario" ImageUrl="~/imagenes/Calendar.png" />
+                                        <br /><br />
+                                        <div>
+                                            <asp:Button ID="btnBuscar" runat="server" BackColor="#000080" BorderStyle="Ridge"
+                                                CausesValidation="False" Font-Names="Trebuchet MS" Font-Size="9pt" ForeColor="White"
+                                                Height="25px"  Text="Buscar" Width="90px" OnClick="btnBuscar_Click" />
+                                        </div>
+                                        <br /><br /><br />
+                                        Clientes Visitados:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <asp:TextBox ID="txt_CONTADOR_CLIENTES" runat="server" Enabled="false" Height="18px" MaxLength="10"
+                                                TabIndex="5" Width="50px"></asp:TextBox>
+                                        <br /><br />
+                                        Total de Visitas Realizadas:&nbsp;&nbsp;&nbsp;
+                                            <asp:TextBox ID="txt_CONTADOR" runat="server" Enabled="false" Height="18px" MaxLength="10"
+                                                TabIndex="5" Width="50px"></asp:TextBox>
+                                        <br /><br />
+                                    <%--</asp:Panel>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>--%>
+                        </div>
+                        <div class="form-group col-md-7">
+                            <cc1:GMap ID="GMap1" runat="server" Key="AIzaSyDlQZ0qAnONpjeQyuY6aJ5bVkE5JnFFZOE" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 100%;">
+                <div id="Div1" style="width:29%; height:500px; float:left; margin-left:20px; margin-top:0; " class="rounded">
+                     
+                </div>
+                <div id="" style="width:65%; height:500px; float:right; margin-top:0;">
+                    
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td height="50px">
+                <uc2:UCPie ID="UCPie1" runat="server" />
+            </td>
+        </tr>
+    </table>
+    </form>
+    
+</body>
+</html> 
